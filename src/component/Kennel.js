@@ -20,16 +20,16 @@ class Kennel extends Component{
   ]
   state = {
     employees: this.employeesFromAPI,
-    locations: this.locatonsFromAPI,
+    locations: this.locationsFromAPI,
     animals: this.animalsFromAPI
   }
   render() {
     return (
-      <article className="kennel">
+      <div className="kennel">
       <EmployeeList employees={this.state.employees} />
       <LocationList locations={this.state.locations}/>
       <AnimalList animals={this.state.animals}/>
-      </article>
+      </div>
     )
   }
 }
